@@ -1,4 +1,4 @@
-VERSION=${VERSION:-"v0.50.10-helios-1"}
+VERSION=${VERSION:-"v8.50.10-helios-1"}
 
 echo "Deploy ibc-apps/modules/ibc-hooks/v8"
 git add .
