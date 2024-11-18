@@ -1,5 +1,7 @@
 VERSION=${VERSION:-"v8.50.10-helios-1"}
 
+# version must be start by v8
+
 echo "Deploy ibc-apps/modules/ibc-hooks/v8"
 git add .
 git commit -m "Publish $VERSION"
