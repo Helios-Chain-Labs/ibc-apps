@@ -1,4 +1,4 @@
-VERSION=${VERSION:-"v8.0.0-helios-0"}
+VERSION=${VERSION:-"v0.50.10-helios-1"}
 
 echo "Deploy ibc-apps/modules/ibc-hooks/v8"
 git add .
@@ -7,6 +7,7 @@ git push
 git tag modules/ibc-hooks/$VERSION
 git push origin modules/ibc-hooks/$VERSION
 cd ./modules/ibc-hooks
-GOPROXY=proxy.golang.org go list -m github.com/Helios-Chain-Labs/ibc-apps/modules/ibc-hooks@$VERSION
+sleep 5
+GOPROXY=proxy.golang.org go list -m github.com/Helios-Chain-Labs/ibc-apps/modules/ibc-hooks/v8@$VERSION
 
 echo "Publish done"
